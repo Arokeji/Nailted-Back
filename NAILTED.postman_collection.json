@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "2d86b0d0-dfb5-4214-9593-5c4a62f9c80c",
+		"name": "NAILTED",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27147948"
+	},
+	"item": [
+		{
+			"name": "QUIZZ",
+			"item": [
+				{
+					"name": "Get quizz by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/quizz/64a83c7dde476cbd909b7c51",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"quizz",
+								"64a83c7dde476cbd909b7c51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create quizz",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/quizz",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"quizz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Eliana\",\n    \"lastName\": \"Salazar\",\n    \"email\": \"elianasalz@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/64561756a7d92cd3dd70e77c",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"64561756a7d92cd3dd70e77c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get quizz results",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/quizz/results",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"quizz",
+								"results"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get quizz by email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/quizz/email@email.com",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"quizz",
+								"email@email.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "QUESTION",
+			"item": [
+				{
+					"name": "Get question",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/question",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"question"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RESPONSE",
+			"item": [
+				{
+					"name": "Create response",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/response",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"response"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update response",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/response/6471e428d82b23a2cb687b6f",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"response",
+								"6471e428d82b23a2cb687b6f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "localhost:3000",
+			"type": "string"
+		}
+	]
+}
