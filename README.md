@@ -1,10 +1,10 @@
-# Nailted Form Back
+# Nailted Quizz Backend
 
-API para la gestión del formulario para Nailted.
+API para la gestión del quizz para Nailted.
 
 ## Descripción
 
-Este proyecto proporciona una API para manejar la gestión de formularios, con funcionalidades relacionadas con preguntas, categorías y recomendaciones globales.
+Este proyecto proporciona una API para manejar la gestión del quizz, con funcionalidades relacionadas con preguntas, categorías y recomendaciones globales.
 
 ## Requisitos
 
