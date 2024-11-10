@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "2d86b0d0-dfb5-4214-9593-5c4a62f9c80c",
+		"_postman_id": "5eee9d13-ba5b-4075-b0da-e9e9946743e7",
 		"name": "NAILTED",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "27147948"
+		"_exporter_id": "25693045"
 	},
 	"item": [
 		{
@@ -148,6 +148,24 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get latest questions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/quizz/current-version",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"quizz",
+								"current-version"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -161,7 +179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n  \"question\": \"64afcf5df1b9eecc2aeece25\",\r\n  \"session\": \"64b013257f3520349727fa07\",\r\n  \"optionSelected\":\r\n  {\r\n    \"score\": 1,\r\n    \"optionText\": \"Hola\"\r\n  },\r\n  \"dateResponded\": \"Fecha actual\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
