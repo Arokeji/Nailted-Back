@@ -14,12 +14,12 @@ interface DataResults {
 }
 
 const transporter = nodemailer.createTransport({
-  host: "smtp-relay.brevo.com",
+  host: "smtp.mailersend.net",
   port: 587,
-  secure: true,
+  secure: false,
   auth: {
-    user: "7fa6e6001@smtp-brevo.com",
-    pass: "FWP3zEarLV7qQCZb",
+    user: "MS_dp5XC4@trial-pxkjn418vz0lz781.mlsender.net",
+    pass: "2F8Rh8hEI4gSzHe8",
   },
 });
 
@@ -98,7 +98,7 @@ export const sendResultsMail = async (email: string, dataResults: DataResults, c
   try {
     const pdfBuffer = await generateDataResultsPdf(dataResults, companyName);
     const mailOptions = {
-      from: "pruebas@fernandomdev.com",
+      from: "MS_dp5XC4@trial-pxkjn418vz0lz781.mlsender.net",
       to: email,
       subject: "Resultados de tu evaluación con Nailted.",
       text: "Aquí tienes los resultados de tu evaluación",

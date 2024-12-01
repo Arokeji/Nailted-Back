@@ -6,7 +6,7 @@ import request from "supertest";
 
 describe("Session Controler", () => {
   const sessionMoc: ISessionCreate = {
-    email: "adrian.rojas@example.com",
+    email: "hcasanova@example.com",
     globalScore: 42,
     categoryScore: [
       {

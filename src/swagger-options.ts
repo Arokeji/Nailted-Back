@@ -12,9 +12,9 @@ export const swaggerOptions: SwaggerOptions = {
         url: "http://mit.com",
       },
       contact: {
-        name: "Los Chunguitos",
-        url: "https://github.com/loschunguitos",
-        email: "chunguitoss@example.com",
+        name: "Nailted",
+        url: "https://github.com/arokeji",
+        email: "Nailted@example.com",
       },
     },
     server: [

@@ -36,7 +36,7 @@ describe("Response Controler", () => {
       version: 2,
     } as any,
     session: {
-      email: "adrian.rojas@example.com",
+      email: "hcasanova@example.com",
       globalScore: 42,
       categoryScore: [
         {

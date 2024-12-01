@@ -1,11 +1,13 @@
 /**
  * @swagger
- * /current-version:
+ * /quizz/current-version:
  *   get:
+ *     tags:
+ *       - Quizz
  *     summary: Obtener preguntas actuales.
  *     description: Obtiene las preguntas actuales del cuestionario.
  *     responses:
- *       200:
+ *       201:
  *         description: Preguntas actuales obtenidas correctamente.
  *       500:
  *         description: Error al obtener las preguntas actuales.

@@ -43,7 +43,14 @@ const getSessionResults = async (id: string): Promise<{ globalScore: number | un
 };
 
 const getSessionByEmail = async (email: string): Promise<Document<ISession> | null> => {
-  return await Session.findOne({ email }).populate(["categoryScore.category"]);
+  const allSessions = await Session.find();
+  for (const session of allSessions) {
+    const isMatch = await bcrypt.compare(email, session.email);
+    if (isMatch) {
+      return await session.populate(["categoryScore.category"]);
+    }
+  }
+  return null;
 };
 
 export const sessionOdm = {

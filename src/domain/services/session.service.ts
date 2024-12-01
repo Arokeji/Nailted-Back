@@ -188,7 +188,7 @@ export const calculateResults = async (totalQuestions: IQuestion[], totalRespons
   await sessionOdm.updateSession(session.id, data);
 };
 
-export const getSessionResults = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+export const updateSessionResults = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const id = req.params.id;
     if (!id) {
@@ -297,7 +297,7 @@ export const sessionService = {
   getSessionById,
   updateSession,
   getSessionByEmail,
-  getSessionResults,
+  updateSessionResults,
   sendMail,
   calculateResults,
 };
